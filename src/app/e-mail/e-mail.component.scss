@@ -1,0 +1,38 @@
+.e-mail {
+    border-right: 3px var(--light-slate);
+    position: fixed;
+    bottom: 0;
+    right: 15%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 130px;
+    
+    a {
+        margin-left: 2px;
+        text-decoration: none;
+        color: var(--light-slate);
+        height: 180px;
+        writing-mode: vertical-rl;
+        font-weight: 200;
+
+        &:hover {
+            cursor: pointer;
+            color: var(--mint);
+            padding-bottom: 10px;
+            transition-duration: 0.35s;
+        }
+    }
+}
+
+.vertical-line-resp {
+    position: fixed;
+    bottom: 0;
+    height: 135px;
+    width: 20px;
+}
+
+.vertical-line {
+    border-right: 1px solid var(--light-slate);
+    height: 135px;
+    width: 10px;
+}

@@ -1,0 +1,30 @@
+.footer{
+    margin-top: var(--m-50);
+    margin-left: var(--m-l);
+    margin-right: var(--m-r);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+}
+
+.copyright{
+    color: var(--lightest-slate);
+    font-size: var(--fs-m);
+    margin-right: 3px;
+    margin-bottom: 14px;
+}
+
+.footer-sub{
+    color: var(--lightest-slate);
+    font-size: var(--fs-s);
+    margin-bottom: var(--m-10);
+}
+
+.impressum{
+    color: var(--lightest-slate);
+    font-size: var(--fs-s);
+    &:hover {
+        color: var(--mint);
+    }
+}

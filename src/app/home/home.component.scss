@@ -1,0 +1,39 @@
+.home {
+    height: 100vh;
+    margin-left: var(--m-l);
+    margin-right: var(--m-r);
+}
+
+.hi {
+    font-weight: 200;
+    color: var(--mint);
+    font-size: var(--fs-xl);
+    margin-top: var(--m-25p);
+}
+
+.name {
+    font-size: 65px;
+    color: var(--lightest-slate);
+    margin-top: var(--m-25);
+}
+
+.statement {
+    font-size: 45px;
+    margin-top: var(--m-12);
+    color: var(--light-slate);
+}
+
+.sub-statement {
+    margin-top: var(--m-25);
+    color: var(--slate);
+
+    span {
+        color: var(--mint);
+    }
+}
+
+.btn-projects {
+    padding: 30px;
+    font-weight: 400;
+    margin-top: var(--m-50);
+}

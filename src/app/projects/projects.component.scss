@@ -1,0 +1,125 @@
+.projects {
+    min-height: 100vh;
+    position: relative;
+    margin-left: var(--m-l);
+    margin-right: var(--m-r);
+}
+
+.project-template {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--m-100);
+}
+
+.project-container {
+    height: 250px;
+    position: relative;
+
+    :hover {
+        cursor: pointer;
+        opacity: 0;
+    }
+}
+
+.overlay {
+    position: absolute;
+    width: 400px;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: var(--navy);
+    opacity: 0.35;
+    margin-top: 1px;
+    border-radius: 5px;
+}
+
+.project-picture {
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid var(--mint);
+    height: 250px;
+    width: 400px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+//FLOAT RIGHT
+.projet-description {
+    box-sizing: inherit;
+    display: block;
+    text-align: right;
+}
+
+.featured-project {
+    font-weight: 300;
+    margin-bottom: 5px;
+    color: var(--mint);
+}
+
+h3 {
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-size: var(--fs-hl);
+    color: var(--light-slate);
+}
+
+.description-text {
+    font-weight: 200;
+    color: var(--slate);
+}
+
+.mechanics {
+    margin-top: var(--m-25);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--slate);
+    font-size: var(--fs-s);
+    font-weight: 100;
+
+    li {
+        list-style: none;
+        margin-left: var(--m-12);
+        margin-right: var(--m-12);
+    }
+
+    :hover {
+        color: var(--mint);
+        cursor: none;
+        transform: scale(1.05);
+    }
+}
+
+//FLOAT LEFT
+
+.projet-description-left {
+    box-sizing: inherit;
+    display: block;
+}
+
+.mechanics-left {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: var(--slate);
+    font-size: var(--fs-s);
+    font-weight: 100;
+
+    li {
+        list-style: none;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    :hover {
+        color: var(--mint);
+        cursor: none;
+        transform: scale(1.05);
+    }
+}
+
+.git {
+    transform: rotate(1deg);
+    height: 75px;
+}

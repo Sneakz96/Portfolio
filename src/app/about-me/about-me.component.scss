@@ -1,0 +1,73 @@
+.about-me {
+    height: 100vh;
+    margin-left: var(--m-l);
+    margin-right: var(--m-r);
+}
+
+.hi {
+    margin-top: var(--m-50);
+}
+
+.description {
+    font-size: var(--fs-m);
+    margin-bottom: var(--m-b);
+    color: var(--slate);
+
+    span {
+        color: var(--mint);
+    }
+}
+
+.skill-container {
+    margin-left: var(--m-25);
+    display: flex;
+}
+
+.skill-list-left {
+    color: var(--slate);
+    font-size: var(--fs-s);
+    font-weight: 300;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    li {
+        margin: 10px 35px 0px;
+        gap: 0px 10px;
+        display: grid;
+        list-style: none;
+    }
+
+    li::before {
+        content: "▹";
+        position: absolute;
+        left: 0;
+        color: var(--mint);
+        font-size: var(--fs-s);
+        line-height: 14px;
+    }
+}
+
+.skill-list-right {
+    color: var(--slate);
+    font-size: var(--fs-s);
+    font-weight: 300;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    li {
+        margin-top: var(--m-10);
+        gap: 0px 10px;
+        display: grid;
+        list-style: none;
+    }
+
+    li::before {
+        content: "▹";
+        position: absolute;
+        color: var(--mint);
+        font-size: var(--fs-s);
+        line-height: 14px;
+    }
+}

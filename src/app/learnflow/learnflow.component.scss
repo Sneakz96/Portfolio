@@ -1,0 +1,30 @@
+.learnflow{
+    height: 100vh;
+    margin-left: var(--m-l);
+    margin-right: var(--m-r);
+}
+
+.skills{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+}
+
+.skill-icon{
+    margin-top: var(--m-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img{
+        height: 40px;
+    }
+
+    p{
+        font-weight: 200;
+        color: var(--slate);
+        margin-top: var(--m-10);
+    }
+}

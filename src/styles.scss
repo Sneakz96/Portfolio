@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: var(--navy);
+    font-family: "Roboto Mono", monospace;
+    letter-spacing: 0.5px;
+}
+
+.btn {
+    height: 40px;
+    border-radius: 4px;
+    border-color: var(--mint);
+    color: var(--mint);
+    font-size: var(--fs-s);
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--green-tint);
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.headline {
+    display: flex;
+    align-items: center;
+}
+
+.head-link {
+    padding-top: 120px;
+    margin-bottom: 100px;
+}
+
+.number {
+    font-size: var(--fs-xl);
+    color: var(--mint);
+    margin-right: var(--m-12);
+    padding-top: 8px;
+}
+
+.headline-text {
+    font-size: var(--fs-hl);
+    font-weight: 400;
+    color: var(--light-slate);
+}
+
+.horizontal-line-resp {
+    margin-left: 3%;
+    width: 30%;
+}
+
+.horizontal-line {
+    border-top: 1px solid var(--light-slate);
+}
+
+.d-none{
+    display: none;
+}
+
+.text-right {
+    text-align: right;
+}
+
+//MARGIN_ROOT
+
+:root{
+    --m-l: 20%;
+    --m-r: 20%;
+    --m-25p: 25%;
+    --m-10: 10px;
+    --m-12: 12.5px;
+    --m-25: 25px;
+    --m-50: 50px;
+    --m-100: 100px;
+}
+
+//ROOT
+
+:root {
+    --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+
+//COLOR_ROOT
+
+:root {
+    --dark-navy: rgb(2, 12, 27);
+    --navy: rgb(10, 25, 48);
+    --light-navy: rgb(127, 130, 134);
+    --lightest-navy: rgb(35, 53, 84);
+    --navy-shadow: rgba(2, 12, 27, 0.6);
+    --dark-slate: rgb(73, 86, 112);
+    --slate: rgb(136, 146, 176);
+    --light-slate: rgb(168, 178, 209);
+    --lightest-slate: rgb(204, 214, 246);
+    --white: rgb(230, 241, 255);
+    --mint: rgb(100, 255, 218);
+    --green-tint: rgba(100, 255, 218, 0.1);
+    --pink: rgb(245, 125, 255);
+    --blue: rgb(87, 203, 255);
+    --red: rgb(211, 15, 15);
+}
+
+//FONT_ROOT
+
+:root {
+    --fs-s: 13px;
+    --fs-m: 16px;
+    --fs-l: 18px;
+    --fs-xl: 20px;
+    --fs-hl: 32px;
+}

@@ -44,6 +44,22 @@ input {
     width: 200px;
 }
 
+.message{
+    height: 200px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+//ALERT
+
+.alert{
+    color: var(--mint);
+    border: 2px solid var(--mint);
+    padding: 5px 20px 5px 20px;
+    margin-bottom: var(--m-50);
+    border-radius: 5px;
+}
+
 //INPUT
 
 textarea:focus,

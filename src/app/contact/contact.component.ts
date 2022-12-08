@@ -6,6 +6,7 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
+  [x: string]: any;
 
   @ViewChild('myContact') myContact!: ElementRef;
   @ViewChild('nameField') nameField!: ElementRef;
@@ -21,6 +22,7 @@ export class ContactComponent implements OnInit {
   async sendMail() {
     console.log('send mail', this.myContact);
 
+   
     let nameField = this.nameField.nativeElement;
     let mailField = this.mailField.nativeElement;
     let messageField = this.messageField.nativeElement;
@@ -41,7 +43,7 @@ export class ContactComponent implements OnInit {
 
     //SEND
 
-    await fetch('https://jahleel-rockendorfheider.developerakademie.net/send_mail/send_mail.php',
+    await fetch('https://jahleel-rockendorfheider.developerakademie.net/mail/send_mail.php',
       {
         method: 'POST',
         body: fd
@@ -52,11 +54,11 @@ export class ContactComponent implements OnInit {
     mailField.disabled = false;
     messageField.disabled = false;
     btn.disabled = false;
-
+      
+    //ALERT
+    
     nameField.value = '';
     mailField.value = '';
     messageField.value = '';
-
   }
-
 }

@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DataProtectionComponent } from './data-protection/data-protection.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SocialsComponent,
     HomeComponent,
     FooterComponent,
-    ImprintComponent
+    ImprintComponent,
+    DataProtectionComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,41 @@
+.data-protection {
+    margin-left: var(--m-l);
+    margin-right: var(--m-r);
+}
+
+.data-protection-headline {
+    font-size: var(--fs-hl);
+    color: var(--lightest-slate);
+    margin-bottom: var(--m-25);
+}
+
+.sub-header {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header-3 {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.header-3-text {
+    margin-top: 10px;
+    color: var(--mint);
+}
+
+.text {
+    margin-bottom: var(--m-12);
+    color: var(--slate);
+
+    a {
+        color: var(--mint);
+    }
+}
+
+.numb{
+    color: var(--mint);
+    margin-right: 5px;
+}

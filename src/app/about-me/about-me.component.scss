@@ -1,22 +1,28 @@
 .about-me {
-    height: 100vh;
     margin-left: var(--m-l);
     margin-right: var(--m-r);
 }
 
+.about-me-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .hi {
-    margin-top: var(--m-50);
+    width: 69.5%;
 }
 
 .description {
     font-size: var(--fs-m);
-    margin-bottom: var(--m-b);
+    margin-bottom: var(--m-25);
     color: var(--slate);
 
     span {
         color: var(--mint);
     }
 }
+
 
 .skill-container {
     margin-left: var(--m-25);
@@ -69,5 +75,37 @@
         color: var(--mint);
         font-size: var(--fs-s);
         line-height: 14px;
+    }
+}
+
+.picture-container {
+    height: 400px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.picture {
+    height: 400px;
+    width: 250px;
+    border: 3px solid var(--mint);
+    border-radius: 5px;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: var(--navy);
+    opacity: 0.35;
+    border-radius: 5px;
+    &:hover{
+        opacity: 0;
     }
 }

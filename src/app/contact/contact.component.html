@@ -10,18 +10,22 @@
     </div>
 
     <div class="contact-form">
+        <div class="alert" #alert>
+            <span>E-Mail sent!</span>
+        </div>
         <div class="contact-description">
             <h3>Got a problem to solve?</h3>
-            <p class="">Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your projects with my work.</p>
+            <p class="">Contact me through this form, I am interested in hearing you, knowing your ideas and
+                contributing to your projects with my work.</p>
             <p class="need">Need a Frontend developer? Contact me!</p>
         </div>
-        <form  class="contact-inputs" (submit)="sendMail()" #myContact ngNativeValidate>
+        <form class="contact-inputs" (submit)="sendMail()" #myContact ngNativeValidate>
             <input type="text" placeholder="Your name" name="name" #nameField required>
             <input type="email" placeholder="Your e-mail" #mailField required>
-            <input type="text" placeholder="Tell me your idea!" name="message" #messageField required>
-            
+            <input type="textarea" class="message" placeholder="Tell me your idea!" name="message" #messageField required>
+
             <button class="btn contact-btn" #btn>Say hello !</button>
         </form>
 
 
-</div>
+    </div>

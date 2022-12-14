@@ -12,7 +12,7 @@
 }
 
 .name {
-    font-size: 65px;
+    font-size: var(--fs-name);
     color: var(--lightest-slate);
     margin-top: var(--m-25);
 }

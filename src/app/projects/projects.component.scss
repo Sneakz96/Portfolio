@@ -31,7 +31,6 @@
     z-index: 2;
     background-color: var(--navy);
     opacity: 0.35;
-    
 }
 
 .project-picture {
@@ -39,7 +38,7 @@
     border: 3px solid var(--mint);
     border-radius: 5px;
     height: 250px;
-    width: 400px;
+    max-width: 400px;
     object-fit: cover;
 }
 
@@ -66,13 +65,15 @@ h3 {
 .description-text {
     font-weight: 200;
     color: var(--slate);
+    height: fit-content;
 }
 
 .mechanics {
-    margin-top: var(--m-25);
+    
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    flex-wrap: wrap;
     color: var(--slate);
     font-size: var(--fs-s);
     font-weight: 100;
@@ -81,11 +82,11 @@ h3 {
         list-style: none;
         margin-left: var(--m-12);
         margin-right: var(--m-12);
+        margin-top: var(--m-25);
     }
 
     :hover {
         color: var(--mint);
-        cursor: none;
         transform: scale(1.05);
     }
 }
@@ -98,23 +99,24 @@ h3 {
 }
 
 .mechanics-left {
-    margin-top: 20px;
+
     display: flex;
     align-items: center;
     justify-content: start;
     color: var(--slate);
     font-size: var(--fs-s);
     font-weight: 100;
+    flex-wrap: wrap;
 
     li {
         list-style: none;
         margin-left: 10px;
         margin-right: 10px;
+        margin-top: var(--m-25);
     }
 
     :hover {
         color: var(--mint);
-        cursor: none;
         transform: scale(1.05);
     }
 }

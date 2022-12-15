@@ -22,7 +22,7 @@ h3 {
     margin-bottom: var(--m-25);
 }
 
-.need{
+.need {
     margin-top: var(--m-12);
 }
 
@@ -31,6 +31,14 @@ h3 {
     margin-bottom: var(--m-50);
     display: flex;
     flex-direction: column;
+
+}
+
+//INPUT
+
+textarea:focus,
+input:focus {
+    outline: none;
 }
 
 input {
@@ -42,17 +50,41 @@ input {
     border-style: none;
     border-bottom: 1px solid var(--slate);
     width: 200px;
+
+    &:-internal-autofill-selected {
+        background-color: var(--navy) !important;
+    }
+
+    &:-internal-autofill-previewed {
+        background-color: var(--navy) !important;
+    }
 }
 
-.message{
+
+.message {
+    display: block;
+    padding: 3px;
+    color: var(--lightest-slate);
+    font-weight: 300;
+    font-size: var(--fs-m);
+    margin-top: var(--m-25);
     height: 200px;
     box-sizing: border-box;
     resize: none;
+    border-style: none;
+    border-bottom: 1px solid var(--slate);
+    width: 206px;
+
+    &::placeholder {
+        position: absolute;
+        bottom: 10px;
+        right: 16px;
+    }
 }
 
 //ALERT
 
-.alert{
+.alert {
     color: var(--mint);
     border: 2px solid var(--mint);
     padding: 5px 20px 5px 20px;
@@ -60,16 +92,11 @@ input {
     border-radius: 5px;
 }
 
-//INPUT
 
-textarea:focus,
-input:focus {
-    outline: none;
-}
 
 //BTN
 
-.contact-btn{
+.contact-btn {
     display: flex;
     align-items: center;
     justify-content: center;

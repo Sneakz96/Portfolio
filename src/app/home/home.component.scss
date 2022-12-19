@@ -37,3 +37,21 @@
     font-weight: 400;
     margin-top: var(--m-50);
 }
+
+@media (max-width: 420px) {
+    .home {
+        margin-top: 150px;
+    }
+
+    .hi {
+        text-align: right;
+    }
+
+    .name {
+        font-size: var(--fs-hl);
+    }
+
+    .statement {
+        text-align: right;
+    }
+}

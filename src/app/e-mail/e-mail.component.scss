@@ -36,3 +36,9 @@
     height: 135px;
     width: 10px;
 }
+
+@media (max-width: 1000px) {
+    .e-mail{
+        display: none;
+    }   
+}

@@ -1,4 +1,5 @@
-.footer{
+.footer {
+    text-align: center;
     margin-top: var(--m-50);
     margin-left: var(--m-l);
     margin-right: var(--m-r);
@@ -8,23 +9,45 @@
     font-weight: 300;
 }
 
-.copyright{
+.copyright {
     color: var(--lightest-slate);
     font-size: var(--fs-m);
     margin-right: 3px;
     margin-bottom: 14px;
 }
 
-.footer-sub{
+.footer-sub {
     color: var(--lightest-slate);
     font-size: var(--fs-s);
     margin-bottom: var(--m-10);
 }
 
-.impressum{
+.imprint {
     color: var(--lightest-slate);
     font-size: var(--fs-s);
+    margin-left: 8px;
+    margin-right: 8px;
     &:hover {
         color: var(--mint);
+    }
+}
+
+.privacy {
+    color: var(--lightest-slate);
+    font-size: var(--fs-s);
+
+    &:hover {
+        color: var(--mint);
+    }
+}
+
+@media (max-width: 720px) {
+    .footer {
+        flex-direction: column;
+    }
+}
+@media (max-width: 425px) {
+    .dash {
+        display: none;
     }
 }

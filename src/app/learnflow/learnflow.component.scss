@@ -7,6 +7,7 @@
 .skills {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: fit-content;
     flex-wrap: wrap;
     margin-bottom: 50px;
@@ -15,7 +16,7 @@
 
 
 .skill-icon {
-    width: 200px;
+    width: 160px;
     margin-top: var(--m-100);
     display: flex;
     justify-content: center;
@@ -37,3 +38,16 @@
         transform: scale(1.08);
     }
 }
+
+// @media (max-width: 1000px) {
+//      .skill-icon{
+//         width: 160px;
+//      }
+// }
+
+// @media (max-width: 533px) {
+//      .skill-icon{
+//         width: 160px;
+//      }
+// }
+

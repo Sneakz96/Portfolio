@@ -39,6 +39,7 @@ h3 {
 textarea:focus,
 input:focus {
     outline: none;
+    
 }
 
 input {
@@ -51,15 +52,21 @@ input {
     border-bottom: 1px solid var(--slate);
     width: 200px;
 
-    &:-internal-autofill-selected {
-        background-color: var(--navy) !important;
-    }
-
-    &:-internal-autofill-previewed {
-        background-color: var(--navy) !important;
-    }
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+input:-webkit-autofill, 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus{
+    -webkit-box-shadow: 0 0 0 30px var(--navy) inset !important;
+    -webkit-text-fill-color: var(--lightest-slate) !important;
+}
 
 .message {
     display: block;
@@ -74,6 +81,7 @@ input {
     border-style: none;
     border-bottom: 1px solid var(--slate);
     width: 206px;
+    
 
     &::placeholder {
         position: absolute;

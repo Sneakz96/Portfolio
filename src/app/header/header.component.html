@@ -2,36 +2,82 @@
     <a class="logo-link" href="#"><img class="logo" src="assets/icons/logo/transparent-2.png"></a>
 
     <nav class="link-menu">
-        <ol>
+        <ol class="menu-links">
             <li>
                 <div class="menu-text">
                     <p>01.</p><a href="#about-me">
-                    <p class="menu-sub-text">About</p></a>
+                        <p class="menu-sub-text">About</p>
+                    </a>
                 </div>
             </li>
             <li>
                 <div class="menu-text">
                     <p>02.</p><a href="#learnflow">
-                    <p class="menu-sub-text">Learnflow</p></a>
+                        <p class="menu-sub-text">Learnflow</p>
+                    </a>
                 </div>
             </li>
             <li>
                 <div class="menu-text">
                     <p>03.</p><a href="#projects">
-                    <p class="menu-sub-text">Projects</p></a>
+                        <p class="menu-sub-text">Projects</p>
+                    </a>
                 </div>
             </li>
             <li>
                 <div class="menu-text">
                     <p>04.</p><a href="#contact">
-                    <p class="menu-sub-text">Contact</p></a>
+                        <p class="menu-sub-text">Contact</p>
+                    </a>
                 </div>
             </li>
             <li>
                 <a [routerLink]="['/resume']" target="_blank"><button class="btn resume">Resume</button></a>
             </li>
+
+        </ol>
+        <ol>
             <li>
-                <img src="assets/icons/mb-menu.png" class="mb-menu-btn d-none">
+                <img src="assets/icons/mb-menu.png" id="mb-menu-btn" class="mb-menu-btn">
             </li>
         </ol>
     </nav>
+
+    
+    <!-- <nav class="mb-menu" id="mb-menu">
+        <ol class="mb-menu-links ">
+            <li>
+                <div class="mb-menu-text">
+                    <p>01.</p><a href="#about-me">
+                        <p class="mb-menu-sub-text">About</p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="mb-menu-text">
+                    <p>02.</p><a href="#learnflow">
+                        <p class="mb-menu-sub-text">Learnflow</p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="mb-menu-text">
+                    <p>03.</p><a href="#projects">
+                        <p class="mb-menu-sub-text">Projects</p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="mb-menu-text">
+                    <p>04.</p><a href="#contact">
+                        <p class="mb-menu-sub-text">Contact</p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="mb-menu-text">
+                    <a [routerLink]="['/resume']" target="_blank"><button class="btn resume">Resume</button></a>
+                </div>
+            </li>
+        </ol>
+    </nav> -->

@@ -14,6 +14,7 @@
 .project-container {
     height: 250px;
     position: relative;
+    width: 400px;
 
     :hover {
         cursor: pointer;
@@ -27,7 +28,7 @@
     top: 3px;
     bottom: 3px;
     left: 3px;
-    right: 3px;
+    right: -3px;
     z-index: 2;
     background-color: var(--navy);
     opacity: 0.35;
@@ -38,7 +39,7 @@
     border: 3px solid var(--mint);
     border-radius: 5px;
     height: 250px;
-    max-width: 400px;
+    width: 400px;
     object-fit: cover;
 }
 
@@ -50,6 +51,12 @@
 }
 
 .featured-project {
+    font-weight: 300;
+    margin-bottom: 5px;
+    color: var(--mint);
+}
+
+.featured-project-epl {
     font-weight: 300;
     margin-bottom: 5px;
     color: var(--mint);
@@ -68,8 +75,9 @@ h3 {
     height: fit-content;
 }
 
+
 .mechanics {
-    
+
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -124,4 +132,25 @@ h3 {
 .git {
     transform: rotate(1deg);
     height: 75px;
+}
+
+@media (max-width: 1000px) {
+    .project-template {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured-project-epl {
+        margin-top: var(--m-25);
+    }
+
+    .project-container{
+        width: 100%;
+    }
+    .project-picture{
+        width: 100%;
+    }
+    .overlay{
+        width: 100%;
+    }
 }

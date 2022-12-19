@@ -27,6 +27,7 @@
 .skill-container {
     margin-left: var(--m-25);
     display: flex;
+    width: fit-content;
 }
 
 .skill-list-left {
@@ -36,6 +37,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    width: 150px;
 
     li {
         margin: 10px 35px 0px;
@@ -61,9 +63,10 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    width: 150px;
 
     li {
-        margin-top: var(--m-10);
+        margin: 10px 35px 0px;
         gap: 0px 10px;
         display: grid;
         list-style: none;
@@ -75,6 +78,8 @@
         color: var(--mint);
         font-size: var(--fs-s);
         line-height: 14px;
+        left: 0;
+        
     }
 }
 
@@ -108,4 +113,16 @@
     &:hover{
         opacity: 0;
     }
+}
+
+@media (max-width: 1000px) {
+        .about-me-description{
+            flex-direction: column;
+        }
+        .picture-container{
+            margin-top: var(--m-50);
+        }
+        .skill-container{
+            flex-direction: column;
+        }
 }

@@ -2,25 +2,46 @@
     height: 100vh;
     margin-left: var(--m-l);
     margin-right: var(--m-r);
+
+    @media (max-width: 840px) {
+        margin-top: 150px;
+    }
 }
 
 .hi {
     font-weight: 200;
     color: var(--mint);
-    font-size: var(--fs-xl);
+    font-size: var(--fs-l);
     margin-top: var(--m-25p);
+
+    @media (max-width: 1000px) {
+        margin-top: 150px;
+        text-align: right;
+    }
 }
 
 .name {
     font-size: var(--fs-name);
     color: var(--lightest-slate);
     margin-top: var(--m-25);
+
+    @media (max-width:1700px) {
+        font-size: 45px;
+    }
 }
 
 .statement {
     font-size: 45px;
     margin-top: var(--m-12);
     color: var(--light-slate);
+
+    @media (max-width:1700px) {
+        font-size: 35px;
+    }
+
+    @media (max-width: 1000px) {
+        text-align: right;
+    }
 }
 
 .sub-statement {
@@ -43,15 +64,7 @@
         margin-top: 150px;
     }
 
-    .hi {
-        text-align: right;
-    }
-
     .name {
         font-size: var(--fs-hl);
-    }
-
-    .statement {
-        text-align: right;
     }
 }

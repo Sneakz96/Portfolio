@@ -42,12 +42,19 @@ a {
     color: var(--mint);
     margin-right: var(--m-12);
     padding-top: 8px;
+    @media (max-width: 420px) {
+        margin-bottom: 3px;
+        font-size: var(--fs-s);
+    }
 }
 
 .headline-text {
     font-size: var(--fs-hl);
     font-weight: 400;
     color: var(--light-slate);
+    @media (max-width: 420px) {
+        font-size: var(--fs-l);
+    }
 }
 
 .horizontal-line-resp {
@@ -67,7 +74,7 @@ a {
     text-align: right;
 }
 
-//MARGIN_ROOT
+//MARGIN ROOT
 
 :root{
     --m-l: 20%;
@@ -86,7 +93,7 @@ a {
     --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
 }
 
-//COLOR_ROOT
+//COLOR ROOT
 
 :root {
     --dark-navy: rgb(2, 12, 27);
@@ -106,7 +113,7 @@ a {
     --red: rgb(211, 15, 15);
 }
 
-//FONT_ROOT
+//FONT ROOT
 
 :root {
     --fs-s: 13px;
@@ -114,9 +121,5 @@ a {
     --fs-l: 18px;
     --fs-xl: 24px;
     --fs-hl: 32px;
-    --fs-name: 70px;
-}
-
-@media(max-width: 1000px) {
-    
+    --fs-name: 60px;
 }

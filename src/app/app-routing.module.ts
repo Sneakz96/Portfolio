@@ -1,30 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { AboutMeComponent } from './about-me/about-me.component';
-import { ContactComponent } from './contact/contact.component';
-import { DataProtectionComponent } from './data-protection/data-protection.component';
-import { EMailComponent } from './e-mail/e-mail.component';
-import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
-import { HomeComponent } from './home/home.component';
-import { ImprintComponent } from './imprint/imprint.component';
-import { LearnflowComponent } from './learnflow/learnflow.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { SocialsComponent } from './socials/socials.component';
+import { DataProtectionWrapperComponent } from './data-protection-wrapper/data-protection-wrapper.component';
+import { ImprintWrapperComponent } from './imprint-wrapper/imprint-wrapper.component';
+import { LandingPageWrapperComponent } from './landing-page-wrapper/landing-page-wrapper.component';
 
 const routes: Routes = [
-  { path: '', component: HeaderComponent },
-  { path: '', component: HomeComponent },
-  { path: '', component: AboutMeComponent },
-  { path: '', component: LearnflowComponent },
-  { path: '', component: ProjectsComponent },
-  { path: '', component: ContactComponent },
-  { path: '', component: EMailComponent },
-  { path: '', component: SocialsComponent },
-  { path: '', component: FooterComponent },
-  { path: '', component: ImprintComponent },
-  { path: '', component: DataProtectionComponent }
+  { path: '', component: LandingPageWrapperComponent },
+  { path: 'imprint', component: ImprintWrapperComponent },
+  { path: 'data-protection', component: DataProtectionWrapperComponent }
 ];
 
 @NgModule({

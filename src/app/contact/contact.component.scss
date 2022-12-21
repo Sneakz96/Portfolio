@@ -15,6 +15,9 @@
 
 .contact-description {
     width: 55%;
+    @media (max-width:420px) {
+        width: 80%;
+    }
 }
 
 h3 {
@@ -31,7 +34,6 @@ h3 {
     margin-bottom: var(--m-50);
     display: flex;
     flex-direction: column;
-
 }
 
 //INPUT
@@ -81,13 +83,6 @@ select:-webkit-autofill:focus{
     border-style: none;
     border-bottom: 1px solid var(--slate);
     width: 206px;
-    
-
-    &::placeholder {
-        position: absolute;
-        bottom: 10px;
-        right: 16px;
-    }
 }
 
 //ALERT
@@ -99,8 +94,6 @@ select:-webkit-autofill:focus{
     margin-bottom: var(--m-50);
     border-radius: 5px;
 }
-
-
 
 //BTN
 

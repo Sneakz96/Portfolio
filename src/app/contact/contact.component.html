@@ -10,6 +10,7 @@
     </div>
 
     <div class="contact-form">
+        <!--#ALERT-->
         <!--<div class="alert" #alert>
             <span>E-Mail sent!</span>
         </div>-->
@@ -19,12 +20,19 @@
                 contributing to your projects with my work.</p>
             <p class="need">Need a Frontend developer? Contact me!</p>
         </div>
+        <!--#INPUT FORM-->
         <div>
-            <form class="contact-inputs" (submit)="sendMail()" #myContact ngNativeValidate>
-                <input type="text" placeholder="Your name" name="name" #nameField required>
-                <input type="email" placeholder="Your e-mail" #mailField required>
-                <textarea class="message" name="message" #messageField required cols="30" rows="10"
-                    placeholder="Tell me your idea!"></textarea>
+            <form class="contact-inputs" (ngSubmit)="sendMail(contactForm)" #contactForm="ngForm">
+                <!--#INPUT NAME-->
+                <input type="text" id="name" class="text" placeholder="Your name" required [(ngModel)]="contact.name"
+                    name="name" #name="ngModel">
+                <!--#INPUT EMAIL-->
+                <input type="email" id="Email" class="text" placeholder="Your e-mail" required
+                    [(ngModel)]="contact.email" name="email" #email="ngModel" email="true">
+                <!--#INPUT MESSAGE-->
+                <textarea id="Message" rows="6" maxlength="3000" class="message"  placeholder="Your message"
+                    required [(ngModel)]="contact.message" name="message" #message="ngModel"></textarea>
+                <!--#SEND BUTTON-->
                 <button class="btn contact-btn" #btn>Say hello !</button>
             </form>
         </div>

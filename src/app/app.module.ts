@@ -15,6 +15,11 @@ import { FooterComponent } from './footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
+import { HttpClientModule } from '@angular/common/http';
+import { LandingPageWrapperComponent } from './landing-page-wrapper/landing-page-wrapper.component';
+import { DataProtectionWrapperComponent } from './data-protection-wrapper/data-protection-wrapper.component';
+import { ImprintWrapperComponent } from './imprint-wrapper/imprint-wrapper.component';
+
 
 @NgModule({
   declarations: [
@@ -29,13 +34,18 @@ import { DataProtectionComponent } from './data-protection/data-protection.compo
     HomeComponent,
     FooterComponent,
     ImprintComponent,
-    DataProtectionComponent
+    DataProtectionComponent,
+    LandingPageWrapperComponent,
+    DataProtectionWrapperComponent,
+    ImprintWrapperComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    BrowserModule,
+    HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

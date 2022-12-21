@@ -28,8 +28,9 @@
 
 .text {
     margin-bottom: var(--m-12);
+    font-size: var(--fs-s);
     color: var(--slate);
-
+    width: 100%;
     a {
         color: var(--mint);
     }

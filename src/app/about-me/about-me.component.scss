@@ -11,6 +11,9 @@
 
 .hi {
     max-width: 60%;
+    @media (max-width: 420px) {
+        min-width: 100% !important;
+    }
 }
 
 .description {

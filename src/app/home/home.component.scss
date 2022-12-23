@@ -1,7 +1,11 @@
 .home {
     height: 100vh;
+    z-index: 5;
     margin-left: var(--m-l);
     margin-right: var(--m-r);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
     @media (max-width: 840px) {
         margin-top: 150px;
@@ -12,10 +16,8 @@
     font-weight: 200;
     color: var(--mint);
     font-size: var(--fs-l);
-    margin-top: var(--m-25p);
 
     @media (max-width: 1000px) {
-        margin-top: 150px;
         text-align: right;
     }
 }

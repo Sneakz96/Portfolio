@@ -1,39 +1,41 @@
-.imprint{
+.imprint {
     margin-left: var(--m-l);
     margin-right: var(--m-r);
 }
 
-.imprint-headline{
+.imprint-headline {
     font-size: var(--fs-hl);
     color: var(--lightest-slate);
     margin-bottom: var(--m-25);
 }
 
-.imprint-sub{
+.imprint-sub {
     color: var(--slate);
     font-weight: 200;
     margin-bottom: var(--m-50);
 }
 
-.imprint-list{
-    li{
+.imprint-list {
+    li {
         list-style: none;
         margin-top: 15px;
     }
-    :last-child{
+
+    :last-child {
         margin-bottom: 15px;
     }
 }
 
-.sub-header{
+.sub-header {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
 }
 
-.m-b{
+.m-b {
     margin-bottom: 25px;
-    a{
+
+    a {
         color: var(--mint);
     }
 }

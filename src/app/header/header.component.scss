@@ -48,22 +48,6 @@
     }
 }
 
-
-.mb-menu-btn {
-    height: 35px;
-    margin-left: var(--m-25);
-
-    &:hover {
-        cursor: pointer;
-        transform: scale(1.1);
-        border-radius: 5px;
-    }
-
-    @media (min-width: 1000px) {
-        display: none;
-    }
-}
-
 .menu-text {
     height: 40px;
     display: flex;
@@ -99,46 +83,81 @@
     }
 }
 
-//MB_MENU
+.mb-menu-btn {
+    height: 0px;
+    margin-left: var(--m-25);
 
-.mb-menu {
+    @media (min-width: 1000px) {
+        display: none;
+    }
+}
+
+/*MB DEVICE*/
+
+.mb-menu-open {
     position: fixed;
-    display: flex;
-    justify-content: center;
-    top: 100px;
+    top: 0;
     left: 0;
-    right: 0;
-    height: 400px;
     z-index: 999;
-    margin-right: var(--m-r);
-    margin-left: var(--m-l);
+    height: 400px;
+    width: 400px;
+    background-color: red;
 }
 
-.mb-menu-links {
-   
-    width: 100%;
+/*MB DEVICE*/
 
-    li {
-        list-style: none;
-    }
+#menu_checkbox {
+    display: none;
+
 }
 
-.mb-menu-text {
-    display: flex;
-    justify-content: center;
-    height: 50px;
-    padding-top: 50px;
-    box-shadow: 0 0 20px -15px var(--navy-shadow);
-    p {
-        color: var(--mint);
-    }
+label {
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+    transition: 0.3s ease transform;
+    display: block;
+    cursor: pointer;
 }
 
-.mb-menu-sub-text {
-    margin-left: 3px;
-    color: var(--lightest-slate) !important;
+label div {
+    width: 4px;
+    height: 4px;
+    background-color: var(--light-slate);
+    margin-left: 0;
+    margin-bottom: 6px;
+    border-radius: 4px;
+    outline: none;
+    transition: 0.3s ease width,
+        0.3s ease margin-left,
+        0.3s ease margin-bottom,
+        0.3s ease background-color;
+}
 
-    &:hover {
-        color: var(--mint) !important;
-    }
+label div:first-child {
+    width: 22px;
+}
+
+label div:nth-child(2) {
+    width: 15px;
+}
+
+label div:last-child {
+    width: 30px;
+    margin-bottom: 0;
+}
+
+#menu_checkbox:checked+label {
+    transform: translateY(-50%) rotateZ(-90deg);
+}
+
+#menu_checkbox:checked+label div {
+    width: 6px;
+    margin-left: 12px;
+    margin-bottom: 3px;
+    background-color: var(--mint);
 }

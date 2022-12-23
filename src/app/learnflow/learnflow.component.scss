@@ -2,6 +2,7 @@
     height: fit-content;
     margin-left: var(--m-l);
     margin-right: var(--m-r);
+    z-index: 5;
 }
 
 .skills {
@@ -29,13 +30,9 @@
     }
 
     p {
-        font-weight: 200;
+        font-weight: 300;
         color: var(--slate);
         margin-top: var(--m-10);
-    }
-
-    &:hover {
-        transform: scale(1.08);
     }
 }
 
@@ -50,4 +47,3 @@
 //         width: 160px;
 //      }
 // }
-

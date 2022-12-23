@@ -4,17 +4,19 @@
     background-color: var(--navy);
     font-family: "Roboto Mono", monospace;
     letter-spacing: 0.5px;
+    scroll-behavior: smooth;
 }
 
 .btn {
     height: 40px;
     border-radius: 4px;
-    border-color: var(--mint);
+    border: 2px solid var(--mint);
     color: var(--mint);
     font-size: var(--fs-s);
     font-weight: 300;
     display: flex;
     align-items: center;
+    z-index: 5;
 
     &:hover {
         cursor: pointer;
@@ -29,6 +31,7 @@ a {
 .headline {
     display: flex;
     align-items: center;
+    z-index: 5;
 }
 
 
@@ -42,6 +45,8 @@ a {
     color: var(--mint);
     margin-right: var(--m-12);
     padding-top: 8px;
+    z-index: 5;
+
     @media (max-width: 420px) {
         margin-bottom: 3px;
         font-size: var(--fs-s);
@@ -52,6 +57,7 @@ a {
     font-size: var(--fs-hl);
     font-weight: 400;
     color: var(--light-slate);
+
     @media (max-width: 420px) {
         font-size: var(--fs-l);
     }
@@ -66,7 +72,7 @@ a {
     border-top: 1px solid var(--light-slate);
 }
 
-.d-none{
+.d-none {
     display: none;
 }
 
@@ -76,7 +82,7 @@ a {
 
 //MARGIN ROOT
 
-:root{
+:root {
     --m-l: 20%;
     --m-r: 20%;
     --m-25p: 25%;
@@ -90,7 +96,7 @@ a {
 //ROOT
 
 :root {
-    --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 //COLOR ROOT

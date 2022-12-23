@@ -30,7 +30,7 @@
                 <input type="email" id="Email" class="text" placeholder="Your e-mail" required
                     [(ngModel)]="contact.email" name="email" #email="ngModel" email="true">
                 <!--#INPUT MESSAGE-->
-                <textarea id="Message" rows="6" maxlength="3000" class="message"  placeholder="Your message"
+                <textarea id="Message" rows="6" class="message"  placeholder="Your message"
                     required [(ngModel)]="contact.message" name="message" #message="ngModel"></textarea>
                 <!--#SEND BUTTON-->
                 <button class="btn contact-btn" #btn>Say hello !</button>

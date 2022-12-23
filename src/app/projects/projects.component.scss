@@ -3,12 +3,15 @@
     position: relative;
     margin-left: var(--m-l);
     margin-right: var(--m-r);
+    z-index: 5;
 }
 
 .project-template {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: var(--m-100);
+    width: 100%;
 }
 
 .project-container {
@@ -21,6 +24,10 @@
         cursor: pointer;
         opacity: 0;
     }
+}
+
+.flow {
+    margin-left: var(--m-25);
 }
 
 .overlay {
@@ -45,6 +52,7 @@
 }
 
 //FLOAT RIGHT
+
 .projet-description {
     box-sizing: inherit;
     display: block;
@@ -76,9 +84,7 @@ h3 {
     height: fit-content;
 }
 
-
 .mechanics {
-
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -88,15 +94,11 @@ h3 {
     font-weight: 100;
 
     li {
+        z-index: 10;
         list-style: none;
         margin-left: var(--m-12);
         margin-right: var(--m-12);
         margin-top: var(--m-25);
-    }
-
-    :hover {
-        color: var(--mint);
-        transform: scale(1.05);
     }
 }
 
@@ -108,7 +110,6 @@ h3 {
 }
 
 .mechanics-left {
-
     display: flex;
     align-items: center;
     justify-content: start;
@@ -118,21 +119,23 @@ h3 {
     flex-wrap: wrap;
 
     li {
+        z-index: 10;
         list-style: none;
         margin-left: 10px;
         margin-right: 10px;
         margin-top: var(--m-25);
     }
-
-    :hover {
-        color: var(--mint);
-        transform: scale(1.05);
-    }
 }
 
 .git {
-    transform: rotate(1deg);
     height: 75px;
+
+}
+
+a {
+    :hover {
+        transform: scale(1.2);
+    }
 }
 
 @media (max-width: 1000px) {
@@ -141,17 +144,23 @@ h3 {
         align-items: center;
     }
 
+    .other-direction {
+        flex-direction: column-reverse !important;
+    }
+
     .featured-project-epl {
         margin-top: var(--m-25);
     }
 
-    .project-container{
+    .project-container {
         width: 100%;
     }
-    .project-picture{
+
+    .project-picture {
         width: 100%;
     }
-    .overlay{
+
+    .overlay {
         width: 100%;
     }
 }

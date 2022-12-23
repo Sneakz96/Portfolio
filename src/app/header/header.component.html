@@ -32,54 +32,19 @@
                     </a>
                 </div>
             </li>
-            <!--#RESUME BUTTON-->
+            <!--#RESUME BTN-->
             <li>
                 <a href="/assets/resume.pdf" target="_blank"><button class="btn resume">Resume</button></a>
             </li>
-        </ol>
-        <ol>
-            <li>
-                <img src="assets/icons/mb-menu.png" id="mb-menu-btn" class="mb-menu-btn">
-            </li>
+            <!--#MB MENU BTN-->
+            <div class="mb-menu-btn" ngClass="{'mb-menu-open': !checked}">
+                <input type="checkbox" id="menu_checkbox" ngModel="checked">
+                <label for="menu_checkbox">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </label>
+            </div>
+
         </ol>
     </nav>
-
-    <!--#MOBILE MENU-->
-
-<!-- <nav class="mb-menu" id="mb-menu">
-        <ol class="mb-menu-links ">
-            <li>
-                <div class="mb-menu-text">
-                    <p>01.</p><a href="#about-me">
-                        <p class="mb-menu-sub-text">About</p>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="mb-menu-text">
-                    <p>02.</p><a href="#learnflow">
-                        <p class="mb-menu-sub-text">Learnflow</p>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="mb-menu-text">
-                    <p>03.</p><a href="#projects">
-                        <p class="mb-menu-sub-text">Projects</p>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="mb-menu-text">
-                    <p>04.</p><a href="#contact">
-                        <p class="mb-menu-sub-text">Contact</p>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="mb-menu-text">
-                    <a [routerLink]="['/resume']" target="_blank"><button class="btn resume">Resume</button></a>
-                </div>
-            </li>
-        </ol>
-    </nav> -->

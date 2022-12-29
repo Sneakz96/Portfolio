@@ -10,15 +10,15 @@
     </div>
 
     <div class="contact-form">
-        <!--#ALERT-->
-        <!--<div class="alert" #alert>
-            <span>E-Mail sent!</span>
-        </div>-->
         <div class="contact-description">
             <h3>Got a problem to solve?</h3>
             <p class="">Contact me through this form, I am interested in hearing you, knowing your ideas and
                 contributing to your projects with my work.</p>
             <p class="need">Need a Frontend developer? Contact me!</p>
+        </div>
+        <!--#ALERT-->
+        <div id="alert" [ngClass]="!messageSend ? 'd-none' : 'force'">
+            <span>E-Mail sent!</span>
         </div>
         <!--#INPUT FORM-->
         <div>
@@ -30,8 +30,8 @@
                 <input type="email" id="Email" class="text" placeholder="Your e-mail" required
                     [(ngModel)]="contact.email" name="email" #email="ngModel" email="true">
                 <!--#INPUT MESSAGE-->
-                <textarea id="Message" rows="6" class="message"  placeholder="Your message"
-                    required [(ngModel)]="contact.message" name="message" #message="ngModel"></textarea>
+                <textarea id="Message" rows="6" class="message" placeholder="Your message" required
+                    [(ngModel)]="contact.message" name="message" #message="ngModel"></textarea>
                 <!--#SEND BUTTON-->
                 <button class="btn contact-btn" #btn>Say hello !</button>
             </form>

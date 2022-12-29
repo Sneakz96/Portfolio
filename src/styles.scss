@@ -76,6 +76,10 @@ a {
     display: none;
 }
 
+.force{
+    display: flex !important;
+}
+
 .text-right {
     text-align: right;
 }
@@ -86,6 +90,7 @@ a {
     --m-l: 20%;
     --m-r: 20%;
     --m-25p: 25%;
+    --m-40p: 41%;
     --m-10: 10px;
     --m-12: 12.5px;
     --m-25: 25px;

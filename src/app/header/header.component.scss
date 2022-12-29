@@ -1,8 +1,6 @@
 .header {
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
     height: 100px;
     width: 100%;
     display: flex;
@@ -24,29 +22,30 @@
 
 .link-menu {
     height: 100px;
-    margin-right: var(--m-r);
     color: var(--mint);
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    margin-right: var(--m-r);
+}
 
-    ol {
-        height: 40px;
+.menu-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+
+    li {
         display: flex;
         align-items: center;
         justify-content: center;
-        list-style: none;
 
-        li {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            a {
-                text-decoration: none
-            }
+        a {
+            text-decoration: none
         }
     }
 }
+
 
 .menu-text {
     height: 40px;
@@ -94,21 +93,104 @@
 
 /*MB DEVICE*/
 
-.mb-menu-open {
-    position: fixed;
-    top: 0;
-    left: 0;
+.mb-menu {
     z-index: 999;
-    height: 400px;
-    width: 400px;
-    background-color: red;
+    margin-left: var(--m-l);
+    margin-right: var(--m-r);
+    height: 260px;
+    width: fit-content;
+    box-shadow: 0 5px 15px -15px var(--navy-shadow);
 }
+
+.active {
+    position: absolute;
+    right: 0;
+    display: flex !important;
+    justify-content: center;
+    align-items: flex-end;
+    top: 100px;
+    
+    
+    z-index: 999;
+    background-color: var(--navy);
+    @media (min-width: 1000px) {
+        display: none !important;
+    }
+}
+
+.mb-menu-text {
+    margin-bottom: var(--m-10);
+    width: 100%;
+}
+
+.mb-menu-ul {
+    background-color: var(--navy);
+    display: flex !important;
+    align-items: flex-end;
+    flex-direction: column;
+    list-style: none;
+
+}
+
+.mb-menu-text {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--mint);
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.mb-menu-sub-text {
+    margin-left: 3px;
+    color: var(--lightest-slate) !important;
+}
+
+.mb-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    &:hover {
+        cursor: default;
+    }
+}
+
+.social-logo {
+    height: 50px;
+    width: 60px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*MB DEVICE*/
 
 #menu_checkbox {
+    outline: none;
     display: none;
-
 }
 
 label {

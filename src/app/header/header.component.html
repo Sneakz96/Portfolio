@@ -3,7 +3,7 @@
     <a class="logo-link" href="#"><img class="logo" src="assets/icons/logo/transparent-2.png"></a>
     <!--#LINK MENU-->
     <nav class="link-menu">
-        <ol class="menu-links">
+        <ul class="menu-links">
             <li>
                 <div class="menu-text">
                     <p>01.</p><a href="#about-me">
@@ -37,14 +37,57 @@
                 <a href="/assets/resume.pdf" target="_blank"><button class="btn resume">Resume</button></a>
             </li>
             <!--#MB MENU BTN-->
-            <div class="mb-menu-btn" ngClass="{'mb-menu-open': !checked}">
-                <input type="checkbox" id="menu_checkbox" ngModel="checked">
+            <div class="mb-menu-btn">
+                <input type="checkbox" id="menu_checkbox" name="checkbox" (click)="toggleMenu()">
                 <label for="menu_checkbox">
                     <div></div>
                     <div></div>
                     <div></div>
                 </label>
             </div>
-
-        </ol>
+        </ul>
+        <div class="mb-menu" [ngClass]="!menuIsOpen ? 'd-none' : 'active'">
+            <ul class="mb-menu-ul">
+                <li class="mb-menu-li">
+                    <div class="mb-menu-text">
+                        <p>01.</p><a href="#about-me" (click)="toggleMenu()">
+                            <p class="mb-menu-sub-text">About</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="mb-menu-li">
+                    <div class="mb-menu-text">
+                        <p>02.</p><a href="#learnflow" (click)="toggleMenu()">
+                            <p class="mb-menu-sub-text">Learnflow</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="mb-menu-li">
+                    <div class="mb-menu-text">
+                        <p>03.</p><a href="#projects" (click)="toggleMenu()">
+                            <p class="mb-menu-sub-text">Projects</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="mb-menu-li">
+                    <div class="mb-menu-text">
+                        <p>04.</p><a href="#contact" (click)="toggleMenu()">
+                            <p class="mb-menu-sub-text">Contact</p>
+                        </a>
+                    </div>
+                </li>
+                <div class="mb-socials">
+                    <!--#GIT-->
+                    <a href="https://github.com/Sneakz96" target="_blank">
+                        <img src="/assets/icons/delivery-folder-new/github/png-2.png" class="social-logo"
+                            id="github"></a>
+                    <!--#LINKEDIN-->
+                    <a href="https://www.linkedin.com/in/jahleel-rockendorf-heider-9a9525259/" target="_blank">
+                        <img src="/assets/icons/delivery-folder-new/Link/Png.png" class="social-logo" id="linkeid"></a>
+                    <!--#XING-->
+                    <a href="https://www.xing.com/profile/Jahleel_RockendorfHeider/" target="_blank">
+                        <img src="/assets/icons/delivery-folder-new/xing/png-2.png" class="social-logo" id="xing"></a>
+                </div>
+            </ul>
+        </div>
     </nav>

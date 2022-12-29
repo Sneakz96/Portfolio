@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -9,8 +8,6 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ContactComponent implements OnInit {
 
-  @Input() status = '';
-  
   messageSend = false;
 
   contact = {
@@ -19,10 +16,7 @@ export class ContactComponent implements OnInit {
     message: '', //Bind to InputField name="message"
   };
 
-
   post = {
-    // Where to send the post request Ex. http://my-domain/sendMail.php
-    //or https://my-domain/sendMail.php if you have SSL-Certificate Active
     endPoint: 'https://jahleelr-h.de/send_mail.php',
     // What to send, notice JSON.stringify
     body: (payload: any) => JSON.stringify(payload),
@@ -35,25 +29,23 @@ export class ContactComponent implements OnInit {
     },
   };
 
-  @ViewChild('nameField') nameField!: ElementRef;
-  @ViewChild('mailField') mailField!: ElementRef;
-  @ViewChild('messageField') messageField!: ElementRef;
-  @ViewChild('btn') btn!: ElementRef;
+  @Input() status = '';
 
   constructor(private http: HttpClient) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   sendMail(ngForm: any) {
+
     console.log(ngForm.form.controls.name);
     if (ngForm.submitted && ngForm.form.valid) {
       this.http
         .post(this.post.endPoint, this.post.body(this.contact))
         .subscribe({
           next: (response) => {
-            ngForm.resetForm()
+            ngForm.resetForm();
             this.messageSend = true;
+            this.checkSendAlert();
             this.timeOutSendMail();
             // Here Message was send
           },
@@ -61,52 +53,23 @@ export class ContactComponent implements OnInit {
             console.error(error);
             // Here Message was not send!!!!!
           },
-
           complete: () => console.info('send post complete'),
         });
-
-      // let nameField = this.nameField.nativeElement;
-      // let mailField = this.mailField.nativeElement;
-      // let messageField = this.messageField.nativeElement;
-      // let btn = this.nameField.nativeElement;
-
-
-      // nameField.disabled = true;
-      // mailField.disabled = true;
-      // messageField.disabled = true;
-      // btn.disabled = true;
-
-
-      // let fd = new FormData();
-      // fd.append('name', nameField.value);
-      // fd.append('mail', mailField.value);
-      // fd.append('message', messageField.value);
-
-      //SEND
-
-      // await fetch('https://jahleel-rockendorfheider.developerakademie.net/mail/send_mail.php',
-      //   {
-      //     method: 'POST',
-      //     body: fd
-      //   }
-      // );
-
-      // nameField.disabled = false;
-      // mailField.disabled = false;
-      // messageField.disabled = false;
-      // btn.disabled = false;
-
-      // //ALERT
-
-      // nameField.value = '';
-      // mailField.value = '';
-      // messageField.value = '';
     }
   }
+
+  checkSendAlert() {
+    let alert = document.getElementById('alert');
+    if (this.messageSend = true) {
+      alert?.classList.remove('d-none');
+    } else {
+      alert?.classList.add('d-none');
+    }
+  }
+
   timeOutSendMail() {
     setTimeout(() => {
       this.messageSend = false;
-    }, 1000);
+    }, 2500);
   }
-
 }

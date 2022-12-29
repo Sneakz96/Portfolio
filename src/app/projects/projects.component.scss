@@ -21,7 +21,6 @@
     margin: 3px;
 
     :hover {
-        cursor: pointer;
         opacity: 0;
     }
 }
@@ -51,6 +50,9 @@
     object-fit: cover;
 }
 
+.join{
+    object-fit: fill;
+}
 //FLOAT RIGHT
 
 .projet-description {

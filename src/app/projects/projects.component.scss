@@ -155,14 +155,15 @@ a {
     }
 
     .project-container {
-        width: 100%;
+        width: 240px;
     }
 
     .project-picture {
-        width: 100%;
+        width: 240px;
+        object-fit: cover;
     }
 
     .overlay {
-        width: 100%;
+        width: 240px;
     }
 }

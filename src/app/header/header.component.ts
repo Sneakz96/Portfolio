@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   menuIsOpen = false;
-
+  
   constructor() { }
 
   ngOnInit(): void {
@@ -16,5 +16,6 @@ export class HeaderComponent implements OnInit {
 
   toggleMenu() {
     this.menuIsOpen = !this.menuIsOpen;
-  }
+    
+    }
 }

@@ -37,8 +37,8 @@
                 <a href="/assets/resume.pdf" target="_blank"><button class="btn resume">Resume</button></a>
             </li>
             <!--#MB MENU BTN-->
-            <div class="mb-menu-btn">
-                <input type="checkbox" id="menu_checkbox" name="checkbox" (click)="toggleMenu()">
+            <div class="mb-menu-btn" #mbMenuButton>
+                <input type="checkbox" id="menu_checkbox" name="checkbox" (click)="toggleMenu()" [checked]="menuIsOpen">
                 <label for="menu_checkbox">
                     <div></div>
                     <div></div>

@@ -8,7 +8,6 @@
     flex-direction: column;
 
     @media (max-width: 840px) {
-        margin-top: var(--m-25);
         height: fit-content ;
     }
 }
@@ -20,6 +19,7 @@
     font-size: var(--fs-l);
 
     @media (max-width: 1000px) {
+        margin-top: 180px;
         text-align: right;
     }
 }
